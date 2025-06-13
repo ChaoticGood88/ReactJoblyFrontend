@@ -1,0 +1,32 @@
+.NavBar {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+
+/* give each group a little horizontal gap */
+.NavBar-group {
+  display: flex;
+  gap: 1rem;
+}
+
+/* push the SECOND group all the way right */
+.NavBar-group + .NavBar-group {
+  margin-left: auto;
+}
+
+/* Make your nav groups center‐align their flex items vertically */
+.NavBar-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Ensure links and buttons all align to the middle of their line box */
+.NavBar-group a,
+.NavBar-group button {
+  vertical-align: middle;
+}
